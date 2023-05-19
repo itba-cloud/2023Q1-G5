@@ -65,4 +65,4 @@
 
 En el diagrama de arquitectura incluimos todos los elementos elegidos para la entrega, además del NAT Gateway. Lo pusimos en la arquitectura más allá que no sea parte de la entrega para que tenga sentido la creación de las sub redes públicas. 
 
-<img src=”Arquitectura.JPG”>
+<img src="https://github.com/FranciscoGoyanes/2023Q1-G5/blob/main/Arquitectura.jpg?raw=true">
