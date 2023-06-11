@@ -2,7 +2,7 @@ provider "aws" {
   alias  = "aws"
   region = "us-east-1"
 
-  shared-credentials_file = "C:/Users/Francisco/.aws/credentials"
+  shared-credentials_file = "~/.aws/credentials"
   profile                 = "default"
 
 }

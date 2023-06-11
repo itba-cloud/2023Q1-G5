@@ -1,5 +1,5 @@
-resource "aws_internet_gateway" "tp3" {
-  vpc_id = aws_vpc.tp3.id
+resource "aws_internet_gateway" "main" {
+  vpc_id = aws_vpc.main.id
   tags = {
     Name = var.igw_name
   }

@@ -1,9 +1,4 @@
 
-data "archive_file" "lambda" {
-  type        = "zip"
-  source_file = "${path.module}/lambda_query_payload.py"
-  output_path = "lambda.zip"
-}
 
 resource "aws_default_security_group" "default" {
   vpc_id = var.vpc_id
@@ -25,11 +20,11 @@ resource "aws_default_security_group" "default" {
 }
 
 resource "aws_lambda_function" "lambda_function" {
-  filename      = "lambda.zip"
-  function_name = "lambda_function_helloworld"
-  role          = "arn:aws:iam::470624541268:role/LabRole"
-  handler       = "lambda_query_payload.lambda_handler"
-  runtime       = "python3.9"
+  filename      = var.lambda_file_name
+  function_name = var.lambda_function_name
+  role          = local.role
+  handler       = var.lambda_handler
+  runtime       = var.lambda_runtime
   vpc_config {
     subnet_ids         = var.private_subnets_ids
     security_group_ids = [aws_default_security_group.default.id, aws_default_security_group.default.id]
