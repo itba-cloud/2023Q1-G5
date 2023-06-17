@@ -8,7 +8,7 @@ Readme
 | Gaspar Maschietto | 61847      | 33%                |
 | Lucía Vineys      | 60232      | 33%                |
 
-**README:**
+
 
 # **Módulos**
 
@@ -60,4 +60,4 @@ Los Meta-argumentos utilizados fueron:
 
 1.  **Diagrama de Arquitectura , solo las piezas elegidas:**
 
-**![](media/424538cd641d0ea545b81d1b5c91adb6.jpg)**
+<img src="https://github.com/gmaschiettoitba/2023Q1-G5/blob/main/Arquitectura.png">
